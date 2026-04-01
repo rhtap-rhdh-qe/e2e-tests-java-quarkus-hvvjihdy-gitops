@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: e2e-tests-java-quarkus-hvvjihdy
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: e2e-tests-java-quarkus-hvvjihdy 
+  name: e2e-tests-java-quarkus-hvvjihdy
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: e2e-tests-java-quarkus-hvvjihdy 
